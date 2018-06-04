@@ -1,15 +1,6 @@
 import React, { Component } from 'react'
-import {
-  View,
-  Text
-} from 'react-native'
+import RootNavigator from './router'
 
 export default class Root extends Component {
-  render () {
-    return (
-      <View>
-        <Text>这是根节点</Text>
-      </View>
-    )
-  }
+  render = () => <RootNavigator></RootNavigator>
 }
