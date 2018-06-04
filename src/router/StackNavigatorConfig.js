@@ -1,4 +1,4 @@
-import CardStackStyleInterpolator from 'react-navigation/src/views/CardStack/CardStackStyleInterpolator'
+import CardStackStyleInterpolator from 'react-navigation/src/views/StackView/StackViewStyleInterpolator'
 
 const screenInterpolater = (sceneProps) => {
     const { route } = sceneProps.scene;

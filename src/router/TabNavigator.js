@@ -12,7 +12,7 @@ import Mine from '../views/Mine/index'
 import HomeTabSelectedIcon from '../assets/home.png'
 import MineTabUnSelectedIcon from '../assets/mine.png'
 
-export default MainTab = TabNavigator({
+export default MainTab = createTabNavigator({
   Home: {
     screen: Home,
     navigationOptions:({navigation, screeProps}) => ({

@@ -12,6 +12,7 @@ export default class Page1 extends Component {
       <View>
         <Text>目前是第一页</Text>
         <Button
+          onPress={ () => alert('启动页第一页') }
           title="go page2"
         ></Button>
       </View>

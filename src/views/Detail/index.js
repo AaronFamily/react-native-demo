@@ -12,6 +12,7 @@ export default class Page1 extends Component {
       <View>
         <Text>这是详情页面</Text>
         <Button
+          onPress={ () => alert('详情页') }
           title="返回首页"
         ></Button>
       </View>
