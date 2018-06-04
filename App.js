@@ -1,13 +1,10 @@
 import React, { Component } from 'react'
-import MainNavigation from './base/MainNavigation/MainNavigation.js'
-import Index from './pages/Index/Index.js'
+import Root from './src/Root'
 
-class App extends Component {
+export default class App extends Component {
   render () {
     return (
-      <MainNavigation />
+      <Root />
     )
   }
 }
-
-export default App
