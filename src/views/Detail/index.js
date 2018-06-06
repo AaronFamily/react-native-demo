@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 import {
   View,
@@ -6,16 +6,11 @@ import {
   Button
 } from 'react-native'
 
-export default class Page1 extends Component {
-  render () {
-    return (
-      <View>
+export default class Page1 extends Component{
+  render() {
+    return <View>
         <Text>这是详情页面</Text>
-        <Button
-          onPress={ () => alert('详情页') }
-          title="返回首页"
-        ></Button>
-      </View>
-    )
+        <Button onPress={() => alert("详情页")} title="返回首页" />
+      </View>;
   }
 }

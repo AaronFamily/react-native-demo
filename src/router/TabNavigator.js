@@ -4,15 +4,15 @@ import {
   StyleSheet
 } from 'react-native'
 
-import { createTabNavigator } from 'react-navigation'
+import { createBottomTabNavigator } from "react-navigation"
 
-import Home from '../views/Home/index'
-import Mine from '../views/Mine/index'
+import Home from '../views/Home'
+import Mine from '../views/Mine'
 
 import HomeTabSelectedIcon from '../assets/home.png'
-import MineTabUnSelectedIcon from '../assets/mine.png'
+import MainTabSelectedIcon from '../assets/mine.png'
 
-export default MainTab = createTabNavigator({
+export default MainTab = createBottomTabNavigator({
   Home: {
     screen: Home,
     navigationOptions:({navigation, screeProps}) => ({
@@ -31,7 +31,7 @@ export default MainTab = createTabNavigator({
       tabBarIcon:(({tintColor,focused}) => {
         return(
           <Image 
-            source={focused ? MainTabSelectedIcon : MainTabUnSelectedIcon}
+            source={HomeTabSelectedIcon}
             style={styles.tabbarImage} 
           />
         )
@@ -56,7 +56,7 @@ export default MainTab = createTabNavigator({
       tabBarIcon:(({tintColor,focused}) => {
         return(
           <Image 
-            source={focused ? MineTabSelectedIcon : MineTabUnSelectedIcon}
+            source={MainTabSelectedIcon}
             style={styles.tabbarImage}
           />
         )

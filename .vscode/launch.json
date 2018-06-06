@@ -1,6 +1,16 @@
 {
   "version": "0.2.0",
-  "configurations": [{
+  "configurations": [
+  {
+    "name": "Debug iOS",
+    "program": "${workspaceRoot}/.vscode/launchReactNative.js",
+    "type": "reactnative",
+    "request": "launch",
+    "platform": "ios",
+    "sourceMaps": true,
+    "outDir": "${workspaceRoot}/.vscode/.react"
+  },
+  {
     "name": "Debug Android",
     "program": "${workspaceRoot}/.vscode/launchReactNative.js",
     "type": "reactnative",

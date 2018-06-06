@@ -1,10 +1,11 @@
 import Guide from './GuideNavigation'
 import MainTab from './TabNavigator'
-import Detail from '../views/Detail/index'
+import Detail from '../views/Detail'
 
 const RootNavigator = {
   Guide: {
-    screen: Guide
+    screen: Guide,
+    navigationOptions: ({ navigation }) => ({ header: null, gesturesEnable: true })
   },
   MainTab: {
     screen: MainTab,
