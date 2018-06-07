@@ -6,7 +6,7 @@ import {
   Button
 } from 'react-native'
 
-export default class Page1 extends Component{
+export default class Detail extends Component{
   render() {
     return <View>
         <Text>这是详情页面</Text>

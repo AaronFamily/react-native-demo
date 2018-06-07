@@ -5,11 +5,11 @@ import {
   Button
 } from 'react-native'
 
-export default class Login extends Component {
+export default class Invitation extends Component {
   render () {
     return (
       <View>
-        <Text></Text>
+        <Text>用户邀请码填写</Text>
       </View>
     )
   }

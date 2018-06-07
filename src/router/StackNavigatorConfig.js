@@ -8,11 +8,11 @@ const screenInterpolater = (sceneProps) => {
 };
 
 const StackNavigationConfig = {
-  initialRouteName: "Guide",
+  initialRouteName: "Login",
   headerMode: "float",
   transitionConfig: () => ({
     screenInterpolater: CardStackStyleInterpolator.forHorizontal
   })
 };
 
-export default StackNavigationConfig;
+export default StackNavigationConfig

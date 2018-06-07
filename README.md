@@ -4,7 +4,6 @@
 路径：android/app/src/main/AndroidManifest.xml
 
 
-
 ## 用到的第三方插件
 - react-native-easy-toast toast组件
 - react-native-animatable 动画组件
@@ -21,4 +20,7 @@
 - redux 集中化状态管理
 - react-redux
 - redux-promise redux异步处理
+- redux-thunk thunk
 - prop-types 验证props类型
+- react-native-storage 集中化管理
+- react-native-linear-gradient 添加渐变功能

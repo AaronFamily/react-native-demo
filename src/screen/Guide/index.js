@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import { View, Text, Button, NetInfo } from "react-native";
 
-export default class Page1 extends Component {
+export default class Guide extends Component {
   render () {
     return (
       <View style={{ marginTop: 30 } }>
