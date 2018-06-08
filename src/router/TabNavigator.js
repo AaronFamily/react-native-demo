@@ -8,8 +8,8 @@ import { createBottomTabNavigator } from "react-navigation"
 
 import { Home, Mine } from 'screen/index'
 
-import HomeTabSelectedIcon from '../assets/home.png'
-import MainTabSelectedIcon from '../assets/mine.png'
+import HomeTabSelectedIcon from '../images/home.png'
+import MainTabSelectedIcon from '../images/mine.png'
 
 export default MainTab = createBottomTabNavigator({
   Home: {

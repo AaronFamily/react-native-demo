@@ -1,4 +1,9 @@
-export default {
-	get TextInput () { return require('../views/Home/index.js').default }
-}
+import AppropriateInput from './AppropriateInput/index.js'
+import BackgroundPicture from './BackgroundPicture/index.js'
+import GradientButton from './GradientButton/index.js'
 
+export {
+	AppropriateInput,
+	BackgroundPicture,
+	GradientButton
+}

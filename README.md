@@ -24,3 +24,4 @@
 - prop-types 验证props类型
 - react-native-storage 集中化管理
 - react-native-linear-gradient 添加渐变功能
+- react-native-program-stylesheet 适配

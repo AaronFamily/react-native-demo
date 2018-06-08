@@ -16,6 +16,7 @@
     "react-native-image-picker": "^0.26.10",
     "react-native-image-progress": "^1.1.1",
     "react-native-linear-gradient": "^2.4.0",
+    "react-native-program-stylesheet": "^1.0.8",
     "react-native-refreshable-listview": "^1.3.0",
     "react-native-storage": "^0.2.2",
     "react-native-swiper": "^1.5.13",
