@@ -1,6 +1,6 @@
 import { createStackNavigator } from 'react-navigation'
 
-import RouteConfig from './RootNavigation'
-import StackNavigatorConfig from './StackNavigatorConfig'
+import RouteConfig from './RootNav/RootNavigation'
+import StackNavigatorConfig from './connfig/StackNavigatorConfig'
 
-export default createStackNavigator(RouteConfig, StackNavigatorConfig)
+export default createStackNavigator(RouteConfig, StackNavigatorConfig())

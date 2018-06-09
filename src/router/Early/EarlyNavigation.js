@@ -1,7 +1,7 @@
 import { createStackNavigator } from 'react-navigation'
-import StackNavigatorConfig from './StackNavigatorConfig'
+import StackNavigatorConfig from '../connfig/StackNavigatorConfig'
 
-import { Guide } from 'screen/index.js'
+import { Guide } from 'screen/index'
 
 const EarlyNav = {
   Guide: {

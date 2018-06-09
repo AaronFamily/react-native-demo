@@ -7,12 +7,21 @@ const screenInterpolater = (sceneProps) => {
     return CardStackStyleInterpolator[transition](sceneProps)
 };
 
-const StackNavigationConfig = {
+const defaultConfig = {
   initialRouteName: "MainTab",
   headerMode: "float",
   transitionConfig: () => ({
-    screenInterpolater: CardStackStyleInterpolator.forHorizontal
-  })
+    screenInterpolater: CardStackStyleInterpolator.forHorizontal,
+  }),
+  navigationOptions: {
+    headerStyle: { 
+      backgroundColor: '#fff', 
+      borderBottomWidth: 0,
+      height: 44
+    },
+  }
 }
 
-export default StackNavigationConfig
+export default StackNavigationConfig = (options={}) => {
+  return { ...defaultConfig, ...options }
+}

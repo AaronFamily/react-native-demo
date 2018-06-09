@@ -4,7 +4,7 @@ import {
   ImageBackground,
   Image,
   Text,
-  TouchableHighlight,
+  TouchableOpacity,
   StyleSheet
 } from 'react-native'
 import PropTypes from 'prop-types'
@@ -13,10 +13,9 @@ import { ButtonBg } from 'images/index.js'
 
 export default class GradientButton extends Component {
   static defaultProps = {
-    style: {},
     title: 'Button',
     source: ButtonBg,
-    activeOpacity: 0.6,
+    activeOpacity: .6,
     resizeMode: 'cover',
     triggerClick: () => {}
   }
@@ -37,7 +36,7 @@ export default class GradientButton extends Component {
         source={ this.props.source }
         resizeMode={ this.props.resizeMode }
       >
-        <TouchableHighlight
+        <TouchableOpacity
           onPress={ this.props.triggerClick }
           style={ styles.button }
           activeOpacity={ this.props.activeOpacity }
@@ -45,7 +44,7 @@ export default class GradientButton extends Component {
           <Text style={ styles.buttonText }>
             { this.props.title }
           </Text>
-        </TouchableHighlight>
+        </TouchableOpacity>
       </ImageBackground>
     )
   }

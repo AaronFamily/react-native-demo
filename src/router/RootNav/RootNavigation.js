@@ -1,6 +1,6 @@
 import { Login, Invitation, Detail } from 'screen/index.js'
-import EarlyNav from './EarlyNavigation'
-import MainTab from './TabNavigator'
+import EarlyNav from '../Early/EarlyNavigation'
+import MainTab from '../MainTab/TabNavigator'
 
 const RootNavigator = {
   Login: {

@@ -1,21 +1,35 @@
 import React, { Component } from 'react'
 
 import {
+  SafeAreaView,
   View,
   Text,
-  Button
+  Button,
+  StyleSheet
 } from 'react-native'
+
+import Address from './Address/index'
+import Information from './Information/index'
+import Operation from './Operation/index'
 
 export default class Mine extends Component {
   render () {
     return (
-      <View>
-        <Text>个人中心</Text>
-        <Button
-          onPress={ () => alert('个人中心') }
-          title="返回首页"
-        ></Button>
-      </View>
+      <SafeAreaView style={ styles.content }>
+        <Information></Information>
+        <Address style={ styles.spacing }></Address>
+        <Operation style={ styles.spacing }></Operation>
+      </SafeAreaView>
     )
   }
 }
+
+const styles = StyleSheet.create({
+  content: {
+    flex: 1,
+    backgroundColor: '#F9FAFC'
+  },
+  spacing: {
+    marginTop: 16
+  }
+})

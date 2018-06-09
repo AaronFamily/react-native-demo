@@ -37,5 +37,3 @@ function http_factory (method, options) {
 
 export const get = http_factory('GET')
 export const post = http_factory('POST')
-export const put = http_factory('PUT')
-export const delete = http_factory('DELETE')

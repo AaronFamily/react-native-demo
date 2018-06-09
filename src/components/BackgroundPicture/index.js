@@ -5,7 +5,6 @@ import { LoginBg } from 'images/index.js'
 
 export default class BackgroundPicture extends Component {
   static defaultProps = {
-    style: {},
     source: LoginBg,
     resizeMode: 'cover'
   }

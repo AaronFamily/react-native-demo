@@ -4,7 +4,6 @@ import PropTypes from 'prop-types'
 
 export default class AppropriateInput extends Component {
   static defaultProps = {
-    style: {},
     autoCorrect: false,
     editable: true,
     keyboardType: 'default',
