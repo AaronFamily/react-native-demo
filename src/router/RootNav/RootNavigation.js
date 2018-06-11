@@ -1,6 +1,6 @@
 import { Login, Invitation, Detail } from 'screen/index.js'
 import EarlyNav from '../Early/EarlyNavigation'
-import MainTab from '../MainTab/TabNavigator'
+import Main from '../MainNavigation/index'
 
 const RootNavigator = {
   Login: {
@@ -15,8 +15,8 @@ const RootNavigator = {
     screen: EarlyNav,
     navigationOptions: ({ navigation }) => ({ header: null, gesturesEnable: false })
   },
-  MainTab: {
-    screen: MainTab,
+  Main: {
+    screen: Main,
     navigationOptions: ({navigation}) => ({header: null, gesturesEnable: false})
   },
   Detail: {

@@ -3,15 +3,26 @@ import React, { Component } from 'react'
 import {
   View,
   Text,
-  Button
+  StyleSheet
 } from 'react-native'
+
+import Operation from './Operation/index'
+import Rules from './Rules/index'
 
 export default class Mine extends Component {
   render () {
     return (
-      <View>
-        <Text>HGBC健康积分</Text>
+      <View style={ styles.container }>
+        <Operation></Operation>
+        <Rules></Rules>
       </View>
     )
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff'
+  }
+})

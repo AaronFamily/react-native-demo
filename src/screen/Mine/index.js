@@ -2,23 +2,28 @@ import React, { Component } from 'react'
 
 import {
   SafeAreaView,
-  View,
-  Text,
-  Button,
   StyleSheet
 } from 'react-native'
+
+import { HeaderRight } from 'components/index'
 
 import Address from './Address/index'
 import Information from './Information/index'
 import Operation from './Operation/index'
 
 export default class Mine extends Component {
+  static navigationOptions = {
+    headerRight: (
+      <HeaderRight></HeaderRight>
+    )
+  }
+
   render () {
     return (
       <SafeAreaView style={ styles.content }>
-        <Information></Information>
-        <Address style={ styles.spacing }></Address>
-        <Operation style={ styles.spacing }></Operation>
+        <Information navigation={this.props.navigation}></Information>
+        <Address style={ styles.spacing } navigation={this.props.navigation}></Address>
+        <Operation style={ styles.spacing } navigation={this.props.navigation}></Operation>
       </SafeAreaView>
     )
   }

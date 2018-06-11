@@ -8,17 +8,22 @@ const screenInterpolater = (sceneProps) => {
 };
 
 const defaultConfig = {
-  initialRouteName: "MainTab",
-  headerMode: "float",
+  initialRouteName: "Main",
   transitionConfig: () => ({
     screenInterpolater: CardStackStyleInterpolator.forHorizontal,
   }),
   navigationOptions: {
-    headerStyle: { 
+    headerStyle: {
       backgroundColor: '#fff', 
       borderBottomWidth: 0,
-      height: 44
+      height: 44,
+      elevation: 0
     },
+    headerTitleStyle: {
+      flex:1,
+      textAlign:'center',
+      fontWeight: '400'
+    }
   }
 }
 

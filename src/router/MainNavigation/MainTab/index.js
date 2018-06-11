@@ -1,13 +1,7 @@
 import React from 'react'
-import {
-  Image,
-  StyleSheet
-} from 'react-native'
+import { StyleSheet } from 'react-native'
 
 import { createBottomTabNavigator } from "react-navigation"
-
-import HomeNav from './HomeNav/HomeNavigation'
-import MineNav from './MineNav/MineNavigation'
 
 import { TabBarItem } from 'components/index'
 import {
@@ -17,11 +11,14 @@ import {
 	selectedMine
 } from 'images/index'
 
+import { Home } from 'screen/index'
+import Mine from './MineNav/index'
+
 export default MainTab = createBottomTabNavigator({
   Home: {
-    screen: HomeNav,
+    screen: Home,
     navigationOptions:({navigation, screeProps}) => ({
-      header:null,
+      header: null,
       headerTitle: '首页',
       headerStyle: styles.navigator,
       headerTitleStyle: styles.navigatorTitle,
@@ -39,9 +36,9 @@ export default MainTab = createBottomTabNavigator({
     })
   },
   Mine: {
-    screen: MineNav,
+    screen: Mine,
     navigationOptions:({navigation, screeProps}) => ({
-      header:null,
+      header: null,
       headerTitle: '我的',
       headerStyle:styles.navigator,
       headerTitleStyle:styles.navigatorTitle,
@@ -86,7 +83,6 @@ const styles = StyleSheet.create({
     color: 'white'
   },
   navigator: {
-    backgroundColor: '#fff',
-    
+    backgroundColor: '#fff'
   }
 })

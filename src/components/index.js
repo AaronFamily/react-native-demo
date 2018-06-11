@@ -10,6 +10,8 @@ import GradientButton from './GradientButton/index'
 import RightArrow from './RightArrow/index'
 // 操作列表
 import JumpList from './JumpList/index'
+// 导航右侧图标
+import HeaderRight from './HeaderRight/index'
 
 
 export {
@@ -18,5 +20,6 @@ export {
 	BackgroundPicture,
 	GradientButton,
 	RightArrow,
-	JumpList
+	JumpList,
+	HeaderRight
 }

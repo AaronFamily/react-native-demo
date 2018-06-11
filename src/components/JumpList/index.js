@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import {
   View,
   Text,
-  StyleSheet
+  StyleSheet,
+  Platform
 } from 'react-native'
 import PropTypes from 'prop-types'
 
@@ -45,13 +46,14 @@ const styles = StyleSheet.create({
   container: {
     height: 44,
     backgroundColor: '#fff',
-    borderBottomWidth: 1,
+    borderBottomWidth: Platform.OS==='android' ? 1: .5,
     borderColor:'#F2F4F5',
     position: 'relative',
     justifyContent: 'center'
   },
   text: {
     fontSize: 15,
+    lineHeight: 44,
     color:'#333'
   },
   arrow: {

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 
 import {
-  SafeAreaView,
   Text,
   View,
   Image,
@@ -12,6 +11,7 @@ import { defaultPhoto, Money, Wallet, TopUp } from 'images/index'
 import Column from './Column/index'
 
 export default class Mine extends Component {
+
   render () {
     return (
       <View style={ styles.container }>
@@ -34,9 +34,11 @@ export default class Mine extends Component {
             isDisable={ false }
             disabledSource={ Money }
             disabledTextColor="#40B1FF"
+            triggerClick={ () => this.props.navigation.navigate('Login') }
           ></Column>
           <Column
             text="提现"
+            iconStyles={ styles.longImage }
             isDisable={ true }
             disabledSource={ Wallet }
             canSource={ Wallet }
@@ -85,16 +87,19 @@ const styles = StyleSheet.create({
   usernameText: {
     color: '#222',
     fontSize: 26,
-    fontWeight: '600',
+    fontWeight: '500',
     marginBottom: 8
   },
   userType: {
     color: '#333',
     fontSize: 19,
-    fontWeight: '600'
+    fontWeight: '400'
   },
   infoShowBox: {
     flexDirection: 'row',
     marginTop: 38,
+  },
+  longImage: {
+    width: 20,
   }
 })
