@@ -8,11 +8,12 @@ export default class AppropriateInput extends Component {
     editable: true,
     keyboardType: 'default',
     multiline: false,
-    maxLength: 11,
+    maxLength: 18,
     placeholder: '',
     placeholderTextColor: '#9B9B9B',
     returnKeyType: 'next',
     clearButtonMode: 'while-editing',
+    secureTextEntry: false,
     onChangeText: () => {}
   }
 
@@ -27,6 +28,7 @@ export default class AppropriateInput extends Component {
     placeholderTextColor: PropTypes.string,
     returnKeyType: PropTypes.string,
     clearButtonMode: PropTypes.string,
+    secureTextEntry: PropTypes.bool,
     onChangeText: PropTypes.func
   }
 
@@ -34,6 +36,7 @@ export default class AppropriateInput extends Component {
     return (
       <TextInput
         style={[styles.textInput, this.props.style]}
+        secureTextEntry={ this.props.secureTextEntry }
         autoCorrect={this.props.autoCorrect}
         keyboardType={this.props.keyboardType}
         editable={this.props.editable}

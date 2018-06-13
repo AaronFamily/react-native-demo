@@ -47,6 +47,10 @@ export default class VerificationCode extends Component {
       </Text>
     )
   }
+
+  componentWillUnmount() {
+    clearInterval(this.timer)
+  }
 }
 
 const styles = StyleSheet.create({

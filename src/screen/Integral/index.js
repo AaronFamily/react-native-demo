@@ -9,7 +9,7 @@ import {
 import Operation from './Operation/index'
 import Rules from './Rules/index'
 
-export default class Mine extends Component {
+export default class Registered extends Component {
   render () {
     return (
       <View style={ styles.container }>

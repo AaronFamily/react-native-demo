@@ -3,6 +3,18 @@
 - android 添加网络权限（NetInfo）
 路径：android/app/src/main/AndroidManifest.xml
 
+```
+添加：<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+```
+
+- 修复android与ios下浮动元素顶起问题
+路径：android/app/src/main/AndroidManifest.xml
+
+```
+修改前：android:windowSoftInputMode="adjustResize"
+修改后：android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+```
+
 
 ## 用到的第三方插件
 - react-native-easy-toast toast组件

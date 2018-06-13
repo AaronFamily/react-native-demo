@@ -37,7 +37,7 @@ export default class GradientButton extends Component {
         resizeMode={ this.props.resizeMode }
       >
         <TouchableOpacity
-          onPress={ this.props.triggerClick }
+          onPress={ (e) => this.props.triggerClick(e) }
           style={ styles.button }
           activeOpacity={ this.props.activeOpacity }
         >
@@ -52,8 +52,7 @@ export default class GradientButton extends Component {
 
 const styles = StyleSheet.create({
   backgroundImage: {
-    marginTop: 40,
-    height: 56
+    height: 57
   },
   button: {
     flex: 1,

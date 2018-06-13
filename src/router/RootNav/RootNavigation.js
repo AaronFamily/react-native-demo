@@ -1,4 +1,4 @@
-import { Login, Invitation, Detail } from 'screen/index.js'
+import { Login, Registered, Verification, Detail } from 'screen/index.js'
 import EarlyNav from '../Early/EarlyNavigation'
 import Main from '../MainNavigation/index'
 
@@ -7,8 +7,12 @@ const RootNavigator = {
     screen: Login,
     navigationOptions: ({ navigation }) => ({ header: null, gesturesEnable: false })
   },
-  Invitation: {
-    screen: Invitation,
+  Registered: {
+    screen: Registered,
+    navigationOptions: ({ navigation }) => ({ header: null, gesturesEnable: false })
+  },
+  Verification: {
+    screen: Verification,
     navigationOptions: ({ navigation }) => ({ header: null, gesturesEnable: false })
   },
   Early: {

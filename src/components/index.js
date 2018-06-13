@@ -1,3 +1,5 @@
+// 安卓沉溺式导航实现
+import AndroidStatusBar from './AndroidStatusBar/index'
 // 导航bar部分组件
 import TabBarItem from './TabBarItem/index'
 // 兼容性TextInput组件
@@ -12,14 +14,23 @@ import RightArrow from './RightArrow/index'
 import JumpList from './JumpList/index'
 // 导航右侧图标
 import HeaderRight from './HeaderRight/index'
-
+// 文字按钮
+import TextButton from './TextButton/index'
+// 声明式文案组件
+import Statement from './Statement/index'
+// 顶部背景banner组件
+import TopBanner from './TopBanner/index'
 
 export {
+	AndroidStatusBar,
 	TabBarItem,
 	AppropriateInput,
 	BackgroundPicture,
 	GradientButton,
 	RightArrow,
 	JumpList,
-	HeaderRight
+	HeaderRight,
+	TextButton,
+	Statement,
+	TopBanner
 }
