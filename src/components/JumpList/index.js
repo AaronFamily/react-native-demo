@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
   container: {
     height: 44,
     backgroundColor: '#fff',
-    borderBottomWidth: Platform.OS==='android' ? 1: .5,
+    borderBottomWidth: Platform.OS==='android' ? .5: 1,
     borderColor:'#F2F4F5',
     position: 'relative',
     justifyContent: 'center'

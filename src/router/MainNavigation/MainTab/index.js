@@ -61,7 +61,7 @@ export default MainTab = createBottomTabNavigator({
   swipeEnabled: false,
   animationEnabled: false,
   lazy: true,
-  initialRouteName: 'Mine',
+  initialRouteName: 'Home',
   backBehavior: 'none',
   tabBarOptions:{
     activeTintColor: '#333', 

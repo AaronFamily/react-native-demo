@@ -8,4 +8,5 @@ module.exports = {
   get Detail () { return require('./Detail/index.js').default },
   get Integral () { return require('./Integral/index.js').default },
   get Settings () { return require('./Settings/index.js').default },
+  get PaymentDetails () { return require('./PaymentDetails/index.js').default },
 }

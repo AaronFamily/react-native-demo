@@ -1,11 +1,8 @@
 import React, { Component } from 'react'
 
-import {
-  SafeAreaView,
-  StyleSheet
-} from 'react-native'
+import { SafeAreaView, StyleSheet, StatusBar, Platform } from 'react-native'
 
-import { HeaderRight } from 'components/index'
+import { HeaderRight, StatusBarTheme } from 'components/index'
 
 import Address from './Address/index'
 import Information from './Information/index'
@@ -18,9 +15,24 @@ export default class Mine extends Component {
     )
   }
 
+  constructor () {
+    super()
+    this.bool = Platform.OS === 'android'
+  }
+
+  componentDidMount () {
+    StatusBar.setBarStyle('light-content')
+    this.bool && StatusBar.setBackgroundColor('#1a0c2f')
+  }
+
+  componentWillUnmount () {
+    this._navListener.remove();
+  }
+
   render () {
     return (
       <SafeAreaView style={ styles.content }>
+        <StatusBarTheme />
         <Information navigation={this.props.navigation}></Information>
         <Address style={ styles.spacing } navigation={this.props.navigation}></Address>
         <Operation style={ styles.spacing } navigation={this.props.navigation}></Operation>

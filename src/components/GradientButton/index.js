@@ -22,6 +22,7 @@ export default class GradientButton extends Component {
 
   static propTypes = {
     style: View.propTypes.style,
+    textStyle: Text.propTypes.style,
     title: PropTypes.string,
     source: Image.propTypes.source,
     activeOpacity: PropTypes.number,
@@ -41,7 +42,7 @@ export default class GradientButton extends Component {
           style={ styles.button }
           activeOpacity={ this.props.activeOpacity }
         >
-          <Text style={ styles.buttonText }>
+          <Text style={ [styles.buttonText, this.props.textStyle] }>
             { this.props.title }
           </Text>
         </TouchableOpacity>

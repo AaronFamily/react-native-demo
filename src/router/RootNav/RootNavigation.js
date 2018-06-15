@@ -1,4 +1,10 @@
-import { Login, Registered, Verification, Detail } from 'screen/index.js'
+import { 
+  Login,
+  Registered,
+  Verification,
+  Detail,
+  PaymentDetails
+} from 'screen/index.js'
 import EarlyNav from '../Early/EarlyNavigation'
 import Main from '../MainNavigation/index'
 
@@ -21,11 +27,15 @@ const RootNavigator = {
   },
   Main: {
     screen: Main,
-    navigationOptions: ({navigation}) => ({header: null, gesturesEnable: false})
+    navigationOptions: ({ navigation }) => ({ header: null, gesturesEnable: false })
   },
   Detail: {
     screen: Detail
+  },
+  PaymentDetails: {
+    screen: PaymentDetails,
+    navigationOptions:({navigation, screeProps}) => ({ title: '收支明细' })
   }
 }
 
-export default RootNavigator;
+export default RootNavigator

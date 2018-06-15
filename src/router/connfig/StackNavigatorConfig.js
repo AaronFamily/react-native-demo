@@ -8,7 +8,7 @@ const screenInterpolater = (sceneProps) => {
 };
 
 const defaultConfig = {
-  initialRouteName: "Login",
+  initialRouteName: "Main",
   transitionConfig: () => ({
     screenInterpolater: CardStackStyleInterpolator.forHorizontal,
   }),

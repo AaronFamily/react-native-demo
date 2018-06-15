@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, ImageBackground, Image, StyleSheet } from 'react-native'
+import { View, ImageBackground, Image } from 'react-native'
 import PropTypes from 'prop-types'
 import { LoginBg } from 'images/index.js'
 

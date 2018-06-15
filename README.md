@@ -37,3 +37,4 @@
 - react-native-storage 集中化管理
 - react-native-linear-gradient 添加渐变功能
 - react-native-program-stylesheet 适配
+- react-native-orientation 横竖屏控制 https://www.cnblogs.com/maoyazhi/p/5411754.html

@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
-import { YellowBox, PixelRatio, Dimensions, StyleSheet, View } from 'react-native'
-import StyleSheet375 from 'react-native-program-stylesheet'
+import { YellowBox } from 'react-native'
+import { Provider } from 'react-redux'
+
+import 'react-native-program-stylesheet'
+
+import store from 'store/index'
 
 import RootNavigator from 'router/index'
 
@@ -10,5 +14,5 @@ YellowBox.ignoreWarnings([
 ])
 
 export default class Root extends Component {
-  render = () => <RootNavigator></RootNavigator>
+  render = () => <Provider store={ store } ><RootNavigator></RootNavigator></Provider>
 }

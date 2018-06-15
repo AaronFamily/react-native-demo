@@ -8,8 +8,6 @@ import {
 import { 
   AppropriateInput,
   GradientButton,
-  TextButton,
-  Statement,
   TopBanner
 } from 'components/index.js'
 

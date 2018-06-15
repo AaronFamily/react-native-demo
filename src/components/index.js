@@ -1,5 +1,7 @@
 // 安卓沉溺式导航实现
 import AndroidStatusBar from './AndroidStatusBar/index'
+// 设置状态栏白色主题
+import StatusBarTheme from './StatusBarTheme/index'
 // 导航bar部分组件
 import TabBarItem from './TabBarItem/index'
 // 兼容性TextInput组件
@@ -20,9 +22,14 @@ import TextButton from './TextButton/index'
 import Statement from './Statement/index'
 // 顶部背景banner组件
 import TopBanner from './TopBanner/index'
+// 详情list列表模板
+import RenderRow from './RenderRow/index'
+// 任务列表
+import TeskItems from './TeskItems/index'
 
 export {
 	AndroidStatusBar,
+	StatusBarTheme,
 	TabBarItem,
 	AppropriateInput,
 	BackgroundPicture,
@@ -32,5 +39,7 @@ export {
 	HeaderRight,
 	TextButton,
 	Statement,
-	TopBanner
+	TopBanner,
+	RenderRow,
+	TeskItems
 }

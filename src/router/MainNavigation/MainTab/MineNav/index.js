@@ -21,7 +21,7 @@ const MineNav = {
 export default createStackNavigator(MineNav, {
   navigationOptions: {
     headerStyle: {
-      backgroundColor: '#fff', 
+      backgroundColor: '#fff',
       borderBottomWidth: 0,
       height: 44,
       elevation: 0

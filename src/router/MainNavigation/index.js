@@ -23,4 +23,4 @@ const Main = {
   }
 }
 
-export default createStackNavigator(Main, StackNavigatorConfig({initialRouteName: 'Settings'}))
+export default createStackNavigator(Main, StackNavigatorConfig({initialRouteName: 'MainTab'}))
